@@ -14,10 +14,10 @@ app.use(express.static(__dirname+'/public'))
 
 
 app.get('/',(req,res)=>res.render('home'))
-app.get('/about',(req,res)=>res.render('about'))
+/*app.get('/about',(req,res)=>res.render('about'))*/
 
 
-app.use((req,res)=>{
+/*app.use((req,res)=>{
     
     res.status(404)
     res.render('404')
@@ -35,4 +35,4 @@ app.use((err,req,res,next)=>{
 app.listen(port,()=>console.log(
     `express started on http://localhost:${port};`+
     `press Ctrl-C`
-))
+))*/
